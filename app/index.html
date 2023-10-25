@@ -1,16 +1,781 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORKING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <title>FaberHouse</title>
 </head>
 
 <body>
-    
+    <div class="wrapper">
+        <div class="menu">
+            <a href="index.html" class="menu__logo logo">
+                <img src="images/svg/logo.svg" alt="logo">
+            </a>
+            <a href="tel:74959026104" class="menu__number">
+                <svg class="svg-icon-mobPhone-dims">
+                    <use xlink:href="images/sprite.svg#icon-mobPhone">
+                    </use>
+                </svg>
+                +7 495 902 61 04
+            </a>
+            <nav class="menu-nav">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="projects.html" class="menu__list-link">Проекты домов</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Услуги</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">компании</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Наши работы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Отзывы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Акции</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="menu__form">
+                <input type="search" class="menu__form-input" placeholder="Поиск">
+            </form>
+            <a href="#" class="menu__link-call">Заказать звонок</a>
+            <ul class="menu__sociall">
+                <li class="menu__sociall-item">
+                    <svg class="svg-instagram-icon-dims">
+                        <use xlink:href="images/sprite.svg#instagram-icon">
+                        </use>
+                    </svg>
+                </li>
+                <li class="menu__sociall-item">
+                    <svg class="svg-vk-icon-dims">
+                        <use xlink:href="images/sprite.svg#vk-icon">
+                        </use>
+                    </svg>
+                </li>
+                <li class="menu__sociall-item">
+                    <svg class="svg-facebook-icon-dims">
+                        <use xlink:href="images/sprite.svg#facebook-icon">
+                        </use>
+                    </svg>
+                </li>
+            </ul>
+            <div class="menu__politicy">
+                <a href="#" class="menu__politicy-link">Пользовательское соглашение</a>
+                <a href="#" class="menu__politicy-link">Политика конфиденциальности</a>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__content">
+                        <img src="images/svg/icon-home.svg" alt="icon-home" class="header__content-icon">
+                        <h1 class="header__content-title">Строим деревянные дома для жизни</h1>
+                        <p class="header__content-text">Уже построили 847 домов
+                            и бань по всей России</p>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <img src="images/svg/icon-medal.svg" alt="icon" class="header__list-img">
+                            <p class="header__list-text">14 лет
+                                на рынке</p>
+                        </li>
+                        <li class="header__list-item">
+                            <img src="images/svg/icon-lamp.svg" alt="icon" class="header__list-img">
+                            <p class="header__list-text">Полный цикл
+                                производства</p>
+                        </li>
+                        <li class="header__list-item">
+                            <img src="images/svg/icon-garanty.svg" alt="icon" class="header__list-img">
+                            <p class="header__list-text">Гарантия на все
+                                наши дома</p>
+                        </li>
+                    </ul>
+                    <img src="images/header/header-img.jpg" alt="image" class="header__img">
+                </div>
+            </div>
+        
+        </header>
+        <main class="main">
+            <section class="perfomance">
+                <div class="container">
+                    <div class="perfomance__items">
+                        <div class="perfomance__item">
+                            <img src="images/perfomance/1-item.png" alt="image" class="perfomance__item-img">
+                            <h5 class="perfomance__item-title">
+                                Дома из бревна
+                            </h5>
+                            <p class="perfomance__item-price">от 450 000 ₽</p>
+                            <a href="#" class="perfomance__item-link">Посмотреть проекты</a>
+                        </div>
+                        <div class="perfomance__item">
+                            <img src="images/perfomance/2-item.png" alt="image" class="perfomance__item-img">
+                            <h5 class="perfomance__item-title">
+                                Дома из бревна
+                            </h5>
+                            <p class="perfomance__item-price">от 450 000 ₽</p>
+                            <a href="#" class="perfomance__item-link">Посмотреть проекты</a>
+                        </div>
+                        <div class="perfomance__item">
+                            <img src="images/perfomance/3-item.png" alt="image" class="perfomance__item-img">
+                            <h5 class="perfomance__item-title">
+                                Каркасные дома
+                            </h5>
+                            <p class="perfomance__item-price">от 1 450 000 ₽</p>
+                            <a href="#" class="perfomance__item-link">Посмотреть проекты</a>
+                        </div>
+                        <div class="perfomance__item">
+                            <img src="images/perfomance/4-item.png" alt="image" class="perfomance__item-img">
+                            <h5 class="perfomance__item-title">
+                                Бани из дерева
+                            </h5>
+                            <p class="perfomance__item-price">от 271 000 ₽</p>
+                            <a href="#" class="perfomance__item-link">Посмотреть проекты</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <secttion class="recomendation">
+                <div class="container">
+                    <div class="recomendation__inner">
+                        <h4 class="recomendation__title">Зарекомендовашие <br> себя проекты</h4>
+                        <div class="recomendation-wrapper" id="1">
+                            <div class="recomendation-slider slider-container">
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-1.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-1.jpg" alt="image">
+                                    </div>
+                                </div>
+            
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-1.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-1.jpg" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recomendation-slider__counter counter-slider">
+                                <img src="images/svg/icon-gallery.svg" alt="icon">
+                                <div class="recomendation-slider-counter counter-slider__count">
+                                    <span class="recomendation-slider__count-current counter-slider__current">1</span>/
+                                    <span class="recomendation-slider__counter-totall counter-slider__totall"></span>
+                                </div>
+                            </div>
+                            <div class="recomendation__box">
+                                <h6 class="recomendation__box-title">Дом из профилированного бруса 6.0м×9.0м ЛД-48</h6>
+                                <dl class="recomendation__box-chars">
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Серия:</dt>
+                                        <dd class="recomendation__box-val">Полутораэтажный</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Технология:</dt>
+                                        <dd class="recomendation__box-val">Брус</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Размер:</dt>
+                                        <dd class="recomendation__box-val">6.0 × 9.0</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Дополнительно:</dt>
+                                        <dd class="recomendation__box-val"> Терраса</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Количество комнат:</dt>
+                                        <dd class="recomendation__box-val">5+</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Площадь:</dt>
+                                        <dd class="recomendation__box-val">96 м2</dd>
+                                    </div>
+                                </dl>
+                                <div class="recomendation__box-price">2 950 000 ₽</div>
+                                <a href="#" class="recomendation__box-link">Подробности</a>
+                            </div>
+                        </div>
+                        <div class="recomendation-wrapper" id="2">
+                            <div class="recomendation-slider slider-container">
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-2.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-2.jpg" alt="image">
+                                    </div>
+                                </div>
+            
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-2.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-2.jpg" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recomendation-slider__counter counter-slider" >
+                                <img src="images/svg/icon-gallery.svg" alt="icon">
+                                <div class="recomendation-slider-counter counter-slider__count">
+                                    <span class="recomendation-slider__count-current counter-slider__current">1</span>/
+                                    <span class="recomendation-slider__counter-totall counter-slider__totall"></span>
+                                </div>
+                            </div>
+                            <div class="recomendation__box">
+                                <h6 class="recomendation__box-title">Дом из профилированного бруса 6.0м×9.0м ЛД-48</h6>
+                                <dl class="recomendation__box-chars">
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Серия:</dt>
+                                        <dd class="recomendation__box-val">Полутораэтажный</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Технология:</dt>
+                                        <dd class="recomendation__box-val">Брус</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Размер:</dt>
+                                        <dd class="recomendation__box-val">6.0 × 9.0</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Дополнительно:</dt>
+                                        <dd class="recomendation__box-val"> Терраса</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Количество комнат:</dt>
+                                        <dd class="recomendation__box-val">5+</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Площадь:</dt>
+                                        <dd class="recomendation__box-val">96 м2</dd>
+                                    </div>
+                                </dl>
+                                <div class="recomendation__box-price">2 950 000 ₽</div>
+                                <a href="#" class="recomendation__box-link">Подробности</a>
+                            </div>
+                        </div>
+                        <div class="recomendation-wrapper" id="3">
+                            <div class="recomendation-slider slider-container">
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-1.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-1.jpg" alt="image">
+                                    </div>
+                                </div>
+            
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-1.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-1.jpg" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recomendation-slider__counter counter-slider">
+                                <img src="images/svg/icon-gallery.svg" alt="icon">
+                                <div class="recomendation-slider-counter counter-slider__count">
+                                    <span class="recomendation-slider__count-current counter-slider__current">1</span>/
+                                    <span class="recomendation-slider__counter-totall counter-slider__totall"></span>
+                                </div>
+                            </div>
+                            <div class="recomendation__box">
+                                <h6 class="recomendation__box-title">Дом из профилированного бруса 6.0м×9.0м ЛД-48</h6>
+                                <dl class="recomendation__box-chars">
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Серия:</dt>
+                                        <dd class="recomendation__box-val">Полутораэтажный</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Технология:</dt>
+                                        <dd class="recomendation__box-val">Брус</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Размер:</dt>
+                                        <dd class="recomendation__box-val">6.0 × 9.0</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Дополнительно:</dt>
+                                        <dd class="recomendation__box-val"> Терраса</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Количество комнат:</dt>
+                                        <dd class="recomendation__box-val">5+</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Площадь:</dt>
+                                        <dd class="recomendation__box-val">96 м2</dd>
+                                    </div>
+                                </dl>
+                                <div class="recomendation__box-price">2 950 000 ₽</div>
+                                <a href="#" class="recomendation__box-link">Подробности</a>
+                            </div>
+                        </div>
+                        <div class="recomendation-wrapper" id="4">
+                            <div class="recomendation-slider slider-container">
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-4.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-4.jpg" alt="image">
+                                    </div>
+                                </div>
+            
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-4.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="recomendation-slider__item">
+                                    <div class="recomendation__slider-img">
+                                        <img src="images/recomendation/recomendation-4.jpg" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recomendation-slider__counter counter-slider">
+                                <img src="images/svg/icon-gallery.svg" alt="icon">
+                                <div class="recomendation-slider-counter counter-slider__count">
+                                    <span class="recomendation-slider__count-current counter-slider__current">1</span>/
+                                    <span class="recomendation-slider__counter-totall counter-slider__totall"></span>
+                                </div>
+                            </div>
+                            <div class="recomendation__box">
+                                <h6 class="recomendation__box-title">Дом из профилированного бруса 6.0м×9.0м ЛД-48</h6>
+                                <dl class="recomendation__box-chars">
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Серия:</dt>
+                                        <dd class="recomendation__box-val">Полутораэтажный</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Технология:</dt>
+                                        <dd class="recomendation__box-val">Брус</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Размер:</dt>
+                                        <dd class="recomendation__box-val">6.0 × 9.0</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Дополнительно:</dt>
+                                        <dd class="recomendation__box-val"> Терраса</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Количество комнат:</dt>
+                                        <dd class="recomendation__box-val">5+</dd>
+                                    </div>
+                                    <div class="recomendation__box-item">
+                                        <dt class="recomendation__box-term">Площадь:</dt>
+                                        <dd class="recomendation__box-val">96 м2</dd>
+                                    </div>
+                                </dl>
+                                <div class="recomendation__box-price">2 950 000 ₽</div>
+                                <a href="#" class="recomendation__box-link">Подробности</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </secttion>
+            <section class="garanties">
+                <div class="container">
+                    <div class="garanties__inner">
+                        <div class="garanties__content">
+                            <h4 class="garanties__content-title">Гарантии нашей <br>компании</h4>
+                            <ul class="garanties__list">
+                                <li class="garanties__list-item">
+                                    <h6 class="garanties__list-title">Персональный менеджер</h6>
+                                    <p class="garanties__list-subtext">Вы может получить консультацию по любому вопросу у своего менеджера</p>
+                                </li>
+                                <li class="garanties__list-item">
+                                    <h6 class="garanties__list-title">Оплата по факту выполненных работ</h6>
+                                    <p class="garanties__list-subtext">Мы уверены в том, что наша работа вам понравится, поэтому не берем предоплату</p>
+                                </li>
+                                <li class="garanties__list-item">
+                                    <h6 class="garanties__list-title">Доставка и разгрузка материала</h6>
+                                    <p class="garanties__list-subtext">Все не приятные хлопоты берем на себя, вы лишь оцениваете результат</p>
+                                </li>
+                                <li class="garanties__list-item">
+                                    <h6 class="garanties__list-title">Закупка всех материалов</h6>
+                                    <p class="garanties__list-subtext">Мы самостоятельно доставим материалы на объект</p>
+                                </li>
+                                <li class="garanties__list-item">
+                                    <h6 class="garanties__list-title">Гарантийный ремонт и устранение недостатков</h6>
+                                    <p class="garanties__list-subtext">Гарантийный период на все выявленные недостатки устраняются в максимально кротчайшие сроки</p>
+                                </li>
+                                <li class="garanties__list-item">
+                                    <h6 class="garanties__list-title">Качественное строительство</h6>
+                                    <p class="garanties__list-subtext">Берем за свои услуги ровно столько, сколько это стоит, гарантируя качественное строительство</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="garanties__promo">
+                            <a class="garanties__promo-link" href="#">
+                                <img src="images/garanties/garanties-;romo.png" alt="image" class="garanties__promo-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="review">
+                <div class="container">
+                    <div class="review__inner">
+                        <h2 class="review__title title">Отзывы о нашей <br> работе</h2>
+                        <div class="review-slider__wrapper">
+                            <div class="review-slider slider-container">
+            
+                                <div class="review-slider__item">
+                                    <p class="review-slider__address">СНТ «Шугарово-5»
+                                        Каркасный дом 115 м2</p>
+                                    <p class="review-slider__text">Далеко-далеко за, словесными горами в стране гласных
+                                        и согласных живут рыбные тексты. Проектах курсивных мир они парадигматическая то
+                                        повстречался. Ты страна послушавшись, семантика имеет не точках большой домах,
+                                        единственное мир силуэт имени.</p>
+                                    <p class="review-slider__text">Далеко-далеко за словесными горами, в стране гласных
+                                        и согласных живут рыбные тексты.</p>
+                                    <p class="review-slider__author"></p>
+            
+                                </div>
+                                <div class="review-slider__item">
+                                    <p class="review-slider__text">Заказывали дом 6×8. Рабочие ребята молодцы,
+                                        справились за 1,5 недели. Дом очень понравился и цена очень хорошая. Спасибо вам
+                                        большое мы очень довольны. Советую всем заказывать здесь.</p>
+                                    <p class="review-slider__author">Юлия</p>
+                                </div>
+                                <div class="review-slider__item">
+                                    <p class="review-slider__text">Далеко-далеко за, словесными горами в стране гласных
+                                        и согласных живут рыбные тексты. Переулка оксмокс что диких, текст гор он
+                                        реторический скатился маленькая напоивший приставка использовало.</p>
+                                    <p class="review-slider__author">Юлия</p>
+                                </div>
+                                <div class="review-slider__item">
+                                    <p class="review-slider__address">СНТ «Шугарово-5»
+                                        Каркасный дом 115 м2</p>
+                                    <p class="review-slider__text">Далеко-далеко за, словесными горами в стране гласных
+                                        и согласных живут рыбные тексты. Проектах курсивных мир они парадигматическая то
+                                        повстречался. Ты страна послушавшись, семантика имеет не точках большой домах,
+                                        единственное мир силуэт имени.</p>
+                                    <p class="review-slider__text">Далеко-далеко за словесными горами, в стране гласных
+                                        и согласных живут рыбные тексты.</p>
+                                    <p class="review-slider__author"></p>
+            
+                                </div>
+                                <div class="review-slider__item">
+                                    <p class="review-slider__text">Заказывали дом 6×8. Рабочие ребята молодцы,
+                                        справились за 1,5 недели. Дом очень понравился и цена очень хорошая. Спасибо вам
+                                        большое мы очень довольны. Советую всем заказывать здесь.</p>
+                                    <p class="review-slider__author">Юлия</p>
+                                </div>
+                                <div class="review-slider__item">
+                                    <p class="review-slider__text">Построен дом 6×8. Строительством остались довольны.
+                                        Бригада хорошая. Построили быстро за 21 день.
+                                        Есть вопросы по регулировке окон. Спасибо компании за строительство.</p>
+                                    <p class="review-slider__author">Хромова О. И.</p>
+                                </div>
+                                <div class="review-slider__item">
+                                    <p class="review-slider__address">СНТ «Шугарово-5»
+                                        Каркасный дом 115 м2</p>
+                                    <p class="review-slider__text">Далеко-далеко за, словесными горами в стране гласных
+                                        и согласных живут рыбные тексты. Проектах курсивных мир они парадигматическая то
+                                        повстречался. Ты страна послушавшись, семантика имеет не точках большой домах,
+                                        единственное мир силуэт имени.</p>
+                                    <p class="review-slider__text">Далеко-далеко за словесными горами, в стране гласных
+                                        и согласных живут рыбные тексты.</p>
+                                    <p class="review-slider__author"></p>
+            
+                                </div>
+                                <div class="review-slider__item">
+                                    <p class="review-slider__text">Заказывали дом 6×8. Рабочие ребята молодцы,
+                                        справились за 1,5 недели. Дом очень понравился и цена очень хорошая. Спасибо вам
+                                        большое мы очень довольны. Советую всем заказывать здесь.</p>
+                                    <p class="review-slider__author">Юлия</p>
+                                </div>
+                                <div class="review-slider__item">
+                                    <p class="review-slider__address">СНТ «Шугарово-5»
+                                        Каркасный дом 115 м2</p>
+                                    <p class="review-slider__text">Далеко-далеко за, словесными горами в стране гласных
+                                        и согласных живут рыбные тексты. Проектах курсивных мир они парадигматическая то
+                                        повстречался. Ты страна послушавшись, семантика имеет не точках большой домах,
+                                        единственное мир силуэт имени.</p>
+                                    <p class="review-slider__text">Далеко-далеко за словесными горами, в стране гласных
+                                        и согласных живут рыбные тексты.</p>
+                                    <p class="review-slider__author"></p>
+            
+                                </div>
+                            </div>
+            
+                            <div class="review-counter counter-slider">
+                                <img src="images/svg/icon-gallery.svg" alt="icon">
+                                <div class="review-slider-counter counter-slider__count">
+                                    <span class="review-slider__count-current counter-slider__current"></span>-
+                                    <span class="review-slider__counter-totall counter-slider__totall">9</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__inner">
+
+                <div class="footer__info">
+
+                    <div class="footer__info-box">
+
+                        <h3 class="footer__info-title title">Несколько слов о нас</h3>
+
+                        <p class="footer__info-text">Компания Legno Domus занимается строительством домов из дерева в
+
+                            Москве и Московской области. На нашем сайте вы сможете найти готовые типовые проекты
+
+                            каркасных и брусовых деревянных сооружений. Кроме того, мы можем построить здание любого
+
+                            типа сложности по вашему индивидуальному проекту.</p>
+
+                    </div>
+
+                    <img src="images/footer/info-img.jpg" alt="image" class="footer__info-img">
+
+                </div>
+
+                <div class="footer__lists">
+
+                    <ul class="footer__list list-benefits">
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-subtitle">Преимущества сотрудничества с нами</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">Мы самостоятельно занимаемся производством и подготовкой
+
+                                древесины для постройки, используя для этого современное оборудование, что существенно
+
+                                снижает цену строительных материалов</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">Мы самостоятельно осуществляем доставку и разгрузку на
+
+                                объекте в Москве или Подмосковье</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">Мы сами выполняем закупку всех сопутствующих материалов
+
+                            </p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">Нашими руками построено уже более 800 деревянных домов и
+
+                                бань</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">Нашими руками построено уже более 800 деревянных домов и
+
+                                бань</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">Опыт наших мастеров в домостроении позволяет завершить
+
+                                постройку в четко установленный срок</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">Мы даем гарантию до двух лет на нашу работу и устраним
+
+                                возможные неполадки в течение гарантийного срока</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">Оплата нашей работы осуществляется по ее завершении</p>
+
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer__list list-offers">
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-subtitle">Предложение компании Legno Domus</p>
+
+                            <p class="footer__list-item-subtext">Вы можете заказать строительство следующих вариантов
+
+                                деревянных домов и коттеджей:</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">каркасных;</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">выполненных из бруса;</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">выполненных из бревен;
+
+                            </p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">домов с выпускными чашами;</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">бань различных типов.</p>
+
+                        </li>
+
+                        <li class="footer__list-item footer__list-item--two">
+
+                            <p class="footer__list-item-subtext">Мы осуществляем постройку сооружений различной
+
+                                этажности и размеров. Помимо непосредственного возведения деревянных домов, мы выполняем
+
+                                следующие виды работ:</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">подведение канализации;</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">монтаж электрики, отопления и сантехники;</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">установку заборов;</p>
+
+                        </li>
+
+                        <li class="footer__list-item">
+
+                            <p class="footer__list-item-text">меблировку.</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer__extra">
+
+                    <p class="footer__extra-text">Для получения более подробной информации по строительству домов под
+
+                        ключ вы можете позвонить нам по телефону. Персональный менеджер поможет рассчитать примерную
+
+                        стоимость постройки и ответит на все интересующие вопросы.</p>
+
+                    <div class="footer__extra-box">
+
+                        <a href="#" class="footer__extra-box-link">
+
+                            <svg class="svg-icon-mobPhone-dims">
+
+                                <use xlink:href="images/sprite.svg#icon-mobPhone">
+
+                                </use>
+
+                            </svg>
+
+                            +7 495 902 61 04
+
+                        </a>
+
+                        <div class="footer__extra-box-address">
+
+                            Москва, Каширское шоссе, владение 63, корпус 1, строение 52
+
+                            Режим работы выставки с 10:00 до 20:00
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    </div>
     <script src="js/main.min.js"></script>
 </body>
 

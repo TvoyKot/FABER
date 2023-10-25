@@ -1,0 +1,59 @@
+.review {
+    padding: 150px 0 75px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+    &-slider__wrapper {
+        position: relative;
+    }
+
+    &-slider .slick-slide {
+        width: 456px;
+    }
+
+    &-slider {
+        position: relative;
+
+        .slick-track {
+            display: flex;
+            gap: 30px;
+        }
+
+        .slick-next {
+            top: -112px;
+            right: 0;
+            position: absolute;
+        }
+    }
+
+    &-slider__item {
+        padding: 30px 35px;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: -50px;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-image: url(../images/svg/icon-message.svg);
+        }
+    }
+
+    .counter-slider {
+        position: absolute;
+        top: -112px;
+        right: 50px;
+
+        & img {
+            display: none;
+        }
+    }
+}
+

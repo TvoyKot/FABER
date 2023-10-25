@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>FaberHouse</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--=include menu.html-->
+        <main class="main">
+            <!-- <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="#">
+                                <img src="images/svg/pagination-home.svg" alt="icon" class="breadcrumbs__list-img">
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a href="#">
+                                about
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <span href="#">
+                                about
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            <section class="projects">
+                <div class="projects__inner">
+                    <div class="container">
+                        <h3 class="projects__title title">Наши проекты домов, бань
+                            и коттеджей из дерева
+                        </h3>
+                        <div class="tabs__wrapper">
+                            <div class="tabs product__tabs">
+                                <a class="tab tab--active projects__tab product__tab" href="#projects__content-all">Все
+                                    проекты</a>
+                                <a class="tab projects__tab product__tab" href="#projects__content-timber">Дома из
+                                    бруса</a>
+                                <a class="tab projects__tab product__tab" href="#projects__content-log">Дома из
+                                    бревна</a>
+                                <a class="tab projects__tab product__tab" href="#projects__content-cascad">Каркасные
+                                    дома</a>
+                                <a class="tab projects__tab product__tab" href="#projects__content-baths">Бани из
+                                    дерева</a>
+                            </div>
+                            <form class="projects-filter">
+                                <select class="projects-filter__select" id="select-series">
+                                    <option value="">Серия</option>
+                                    <option value="">Серия</option>
+                                    <option value="">Серия</option>
+                                </select>
+                                <select class="projects-filter__select" id="select-area">
+                                    <option value="">От 100 кв.м</option>
+                                    <option value="">От 200 кв.м</option>
+                                    <option value="">От 300 кв.м</option>
+                                    <option value="">Более 400 кв.м</option>
+
+                                </select>
+                                <select class="projects-filter__select" id="select-rooms">
+                                    <option value="">Комнат: от 1 до 3</option>
+                                    <option value="">Комнат: от 3 до 5</option>
+                                    <option value="">Комнат: от 5 до 8</option>
+                                    <option value="">Комнат более: 8</option>
+                                </select>
+                                <select class="projects-filter__select" id="select-price">
+                                    <option value="">От 20.000$</option>
+                                    <option value="">От 50.000$</option>
+                                    <option value="">От 80.000$</option>
+                                    <option value="">Более 100.000$</option>
+                                </select>
+                                <select class="projects-filter__select" id="select-extra">
+                                    <option value="">Постройка бани</option>
+                                    <option value="">Постройка гаража</option>
+                                    <option value="">Постройка террасы</option>
+                                    <option value="">Благоустройство территории</option>
+                                </select>
+                                <button class="projects-filter__btn">
+                                    Показать проекты
+                                </button>
+                            </form>
+                            <label class="projects-filter__select--label" for="select-sort">Сортировать по:
+                                <select class="projects-filter__select projects-filter__select--sort" id="select-sort">
+                                    <option value="">Популярности</option>
+                                    <option value="">Рейтингу</option>
+                                    <option value="">Просмотрам</option>
+                                    <option value="">Цене(Мин,Макс)</option>
+                                    <option value="">Цене(Макс,Мин)</option>
+                                </select>
+                            </label>
+                            <div class="tabs-container">
+                                <div class="projects__content tabs-content tabs-content--active"
+                                    id="projects__content-all">
+                                    <div class="projects__inner">
+                                        <div class="projects__items product__items">
+                                            <form class="projects__form">
+                                                <p class="projects__form-subtitle">Отправьте свой проект
+                                                    на бесплатный расчет
+                                                </p>
+                                                <input type="text" class="projects__form-input" placeholder="Имя">
+                                                <input type="tel" class="projects__form-input" placeholder="Телефон">
+                                                <input type="file" class="projects__form-input projects__form-input--file"
+                                                    placeholder="Выберите файл проекта">
+                                                <button class="projects__form-btn">Отправьте проект
+                                                    на расчет</button>
+                                                <p class="projects__form-politicy">Нажимая кнопку «Отправить» вы
+                                                    соглашаетесь
+                                                    с пользовательским соглашением и ознакомились
+                                                    с нашей политикой конфиденциальности</p>
+                                            </form>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-1.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <h5 class="projects__item-title products__item-title">Дом из
+                                                    оцилиндрованного бревна
+                                                    5.2м×7.6м ОЦБ1</h5>
+                                                <div class="projects__item-info">
+                                                    <p
+                                                        class="projects__item-info-item projects__item-area product__item-area">
+                                                        145 м2</з>
+                                                    <p
+                                                        class="projects__item-info-item projects__item-price product__item-price">
+                                                        2 950 000 ₽</p>
+                                                    <a href="#"
+                                                        class="projects__item-info-item projects__item-link products__item-link ">Подробности...</a>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-2.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-3.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-4.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-1.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <h5 class="projects__item-title products__item-title">Дом из
+                                                    оцилиндрованного бревна
+                                                    5.2м×7.6м ОЦБ1</h5>
+                                                <div class="projects__item-info">
+                                                    <p
+                                                        class="projects__item-info-item projects__item-area product__item-area">
+                                                        145 м2</з>
+                                                    <p
+                                                        class="projects__item-info-item projects__item-price product__item-price">
+                                                        2 950 000 ₽</p>
+                                                    <a href="#"
+                                                        class="projects__item-info-item projects__item-link products__item-link ">Подробности...</a>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-2.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-3.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-4.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-1.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <h5 class="projects__item-title products__item-title">Дом из
+                                                    оцилиндрованного бревна
+                                                    5.2м×7.6м ОЦБ1</h5>
+                                                <div class="projects__item-info">
+                                                    <p
+                                                        class="projects__item-info-item projects__item-area product__item-area">
+                                                        145 м2</з>
+                                                    <p
+                                                        class="projects__item-info-item projects__item-price product__item-price">
+                                                        2 950 000 ₽</p>
+                                                    <a href="#"
+                                                        class="projects__item-info-item projects__item-link products__item-link ">Подробности...</a>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-2.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-3.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-4.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-1.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <h5 class="projects__item-title products__item-title">Дом из
+                                                    оцилиндрованного бревна
+                                                    5.2м×7.6м ОЦБ1</h5>
+                                                <div class="projects__item-info">
+                                                    <p
+                                                        class="projects__item-info-item projects__item-area product__item-area">
+                                                        145 м2</з>
+                                                    <p
+                                                        class="projects__item-info-item projects__item-price product__item-price">
+                                                        2 950 000 ₽</p>
+                                                    <a href="#"
+                                                        class="projects__item-info-item projects__item-link products__item-link ">Подробности...</a>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-2.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-3.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-4.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-1.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <h5 class="projects__item-title products__item-title">Дом из
+                                                    оцилиндрованного бревна
+                                                    5.2м×7.6м ОЦБ1</h5>
+                                                <div class="projects__item-info">
+                                                    <p
+                                                        class="projects__item-info-item projects__item-area product__item-area">
+                                                        145 м2</з>
+                                                    <p
+                                                        class="projects__item-info-item projects__item-price product__item-price">
+                                                        2 950 000 ₽</p>
+                                                    <a href="#"
+                                                        class="projects__item-info-item projects__item-link products__item-link ">Подробности...</a>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-2.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-3.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-4.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects__content tabs-content" id="projects__content-timber">
+                                    <div class="projects__inner">
+                                        <div class="projects__items product__items">
+                                            <form class="projects__form">
+                                                <p class="projects__form-subtitle">Отправьте свой проект
+                                                    на бесплатный расчет
+                                                </p>
+                                                <input type="text" class="projects__form-input" placeholder="Имя">
+                                                <input type="tel" class="projects__form-input" placeholder="Телефон">
+                                                <input type="file" class="projects__form-input projects__form-input--file"
+                                                    placeholder="Выберите файл проекта">
+                                                <button class="projects__form-btn">Отправьте проект
+                                                    на расчет</button>
+                                                <p class="projects__form-politicy">Нажимая кнопку «Отправить» вы
+                                                    соглашаетесь
+                                                    с пользовательским соглашением и ознакомились
+                                                    с нашей политикой конфиденциальности</p>
+                                            </form>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-1.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <h5 class="projects__item-title products__item-title">Дом из
+                                                    оцилиндрованного бревна
+                                                    5.2м×7.6м ОЦБ1</h5>
+                                                <div class="projects__item-info">
+                                                    <p
+                                                        class="projects__item-info-item projects__item-area product__item-area">
+                                                        145 м2</з>
+                                                    <p
+                                                        class="projects__item-info-item projects__item-price product__item-price">
+                                                        2 950 000 ₽</p>
+                                                    <a href="#"
+                                                        class="projects__item-info-item projects__item-link products__item-link ">Подробности...</a>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-2.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-3.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-4.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects__content tabs-content" id="projects__content-log">
+                                    <div class="projects__inner">
+                                        <div class="projects__items product__items">
+                                            <form class="projects__form">
+                                                <p class="projects__form-subtitle">Отправьте свой проект
+                                                    на бесплатный расчет
+                                                </p>
+                                                <input type="text" class="projects__form-input" placeholder="Имя">
+                                                <input type="tel" class="projects__form-input" placeholder="Телефон">
+                                                <input type="file" class="projects__form-input projects__form-input--file"
+                                                    placeholder="Выберите файл проекта">
+                                                <button class="projects__form-btn">Отправьте проект
+                                                    на расчет</button>
+                                                <p class="projects__form-politicy">Нажимая кнопку «Отправить» вы
+                                                    соглашаетесь
+                                                    с пользовательским соглашением и ознакомились
+                                                    с нашей политикой конфиденциальности</p>
+                                            </form>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-1.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <h5 class="projects__item-title products__item-title">Дом из
+                                                    оцилиндрованного бревна
+                                                    5.2м×7.6м ОЦБ1</h5>
+                                                <div class="projects__item-info">
+                                                    <p
+                                                        class="projects__item-info-item projects__item-area product__item-area">
+                                                        145 м2</з>
+                                                    <p
+                                                        class="projects__item-info-item projects__item-price product__item-price">
+                                                        2 950 000 ₽</p>
+                                                    <a href="#"
+                                                        class="projects__item-info-item projects__item-link products__item-link ">Подробности...</a>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-4.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects__content tabs-content" id="projects__content-cascad">
+
+                                    <div class="projects__inner">
+                                        <div class="projects__items product__items">
+                                            <form class="projects__form">
+                                                <p class="projects__form-subtitle">Отправьте свой проект
+                                                    на бесплатный расчет
+                                                </p>
+                                                <input type="text" class="projects__form-input" placeholder="Имя">
+                                                <input type="tel" class="projects__form-input" placeholder="Телефон">
+                                                <input type="file" class="projects__form-input projects__form-input--file"
+                                                    placeholder="Выберите файл проекта">
+                                                <button class="projects__form-btn">Отправьте проект
+                                                    на расчет</button>
+                                                <p class="projects__form-politicy">Нажимая кнопку «Отправить» вы
+                                                    соглашаетесь
+                                                    с пользовательским соглашением и ознакомились
+                                                    с нашей политикой конфиденциальности</p>
+                                            </form>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-1.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <h5 class="projects__item-title products__item-title">Дом из
+                                                    оцилиндрованного бревна
+                                                    5.2м×7.6м ОЦБ1</h5>
+                                                <div class="projects__item-info">
+                                                    <p
+                                                        class="projects__item-info-item projects__item-area product__item-area">
+                                                        145 м2</з>
+                                                    <p
+                                                        class="projects__item-info-item projects__item-price product__item-price">
+                                                        2 950 000 ₽</p>
+                                                    <a href="#"
+                                                        class="projects__item-info-item projects__item-link products__item-link ">Подробности...</a>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-4.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects__content tabs-content" id="projects__content-baths">
+
+                                    <div class="projects__inner">
+                                        <div class="projects__items product__items">
+                                            <form class="projects__form">
+                                                <p class="projects__form-subtitle">Отправьте свой проект
+                                                    на бесплатный расчет
+                                                </p>
+                                                <input type="text" class="projects__form-input" placeholder="Имя">
+                                                <input type="tel" class="projects__form-input" placeholder="Телефон">
+                                                <input type="file" class="projects__form-input projects__form-input--file"
+                                                    placeholder="Выберите файл проекта">
+                                                <button class="projects__form-btn">Отправьте проект
+                                                    на расчет</button>
+                                                <p class="projects__form-politicy">Нажимая кнопку «Отправить» вы
+                                                    соглашаетесь
+                                                    с пользовательским соглашением и ознакомились
+                                                    с нашей политикой конфиденциальности</p>
+                                            </form>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-1.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <h5 class="projects__item-title products__item-title">Дом из
+                                                    оцилиндрованного бревна
+                                                    5.2м×7.6м ОЦБ1</h5>
+                                                <div class="projects__item-info">
+                                                    <p
+                                                        class="projects__item-info-item projects__item-area product__item-area">
+                                                        145 м2</з>
+                                                    <p
+                                                        class="projects__item-info-item projects__item-price product__item-price">
+                                                        2 950 000 ₽</p>
+                                                    <a href="#"
+                                                        class="projects__item-info-item projects__item-link products__item-link ">Подробности...</a>
+                                                </div>
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-2.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="projects__item product__item">
+                                                <img src="images/product/item-3.jpg" alt="image"
+                                                    class="product__item-img">
+                                                <div class="products__item-inner">
+                                                    <h5 class="projects__item-title products__item-title">Дом из
+                                                        оцилиндрованного бревна
+                                                        5.2м×7.6м ОЦБ1</h5>
+                                                    <div class="projects__item-info projects__item-info">
+                                                        <p
+                                                            class="projects__item-info-item projects__item-area projects__item-price">
+                                                            145 м2</з>
+                                                        <p
+                                                            class="projects__item-info-item products__item-price projects__item-price">
+                                                            2 950 000 ₽</p>
+                                                        <a href="#"
+                                                            class="projects__item-info-item products__item-link projects__item-link">Подробности...</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="pagination">
+                <div class="container">
+                    <ul class="pagination__list">
+                        <li class="pagination__list-item ">
+                            <button class="pagination__list-btn">Назад</button>
+                        </li>
+                        <li class="pagination__list-item pagination__list-item--active">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#">4</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#">5</a>
+                        </li>
+                        <li class="pagination__list-item active">
+                            <button class="pagination__list-btn">Вперёд</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <!--=include garanties.html-->
+        <!--=include footer.html-->
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

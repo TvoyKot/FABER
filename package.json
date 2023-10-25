@@ -29,6 +29,7 @@
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "jquery": "^3.7.0",
+    "jquery-form-styler": "^2.0.2",
     "sass": "^1.62.1",
     "slick-slider": "^1.8.2"
   }

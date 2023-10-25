@@ -1,38 +1,87 @@
 html,
 body {
-  height: 100%;
+  min-height: 1240px;
   scroll-behavior: smooth;
 }
 
-// body {
-  // display: flex;
-  // flex-direction: column;
-//   @extend %ubuntu-light;
-//   color: #fff;
-//   font-size: 17px;
-//   line-height: 21px;
-//   overflow-x: hidden;
-//   overflow-y: scroll;
-//   position: relative;
-// }
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 .footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .container {
-  max-width: 1270px;
+  width: 100%;
+  max-width: 1470px;
   margin: 0 auto;
-  padding: 0 15px;
+  margin-left: 385px;
+  padding: 0 20px;
 }
 
+.title {
+  color: $default;
+  font-family: inherit;
+  font-size: 49px;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.tabs {
+  display: flex;
+  & .tab {
+    color: $default;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    width: 320px;
+    padding: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    position: relative;
+   
+    &--active {
+      border: 2px solid $default;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 58px;
+        left: 130px;
+        width: 18px;
+        height: 18px;
+        border-left: 2px solid $default;
+        border-bottom: 2px solid $default;
+        transform: rotate(-45deg);
+        z-index: 5;
+        background-color: #fff;
+      }
+    }
+  }
+  &-content {
+    display: none;
+    &--active
+    {
+      display: block;
+    }
+  }
+}

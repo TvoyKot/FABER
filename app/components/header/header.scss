@@ -1,0 +1,82 @@
+.header {
+    min-height: 100vh;
+    background-color: $colorAccent;
+
+    &__inner {
+        display: flex;
+        position: relative;
+    }
+
+    &__content {
+        width: 410px;
+        margin-right: 48px;
+        margin-bottom: 115px;
+        word-break: keep-all;
+    }
+
+    &__content {
+        margin-top: 111px;
+        position: relative;
+    }
+
+    &__content-title {
+        color: #FFF;
+        font-size: 49px;
+        font-weight: 500;
+        line-height: 56px;
+        margin-bottom: 17px;
+    }
+
+    &__content-text {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    &__img {
+        height: 100vh;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        align-items: center;
+        padding: 36px 47px 31px 100px;
+        background: #EFEBDE;
+        position: absolute;
+        left: -105px;
+        bottom: 0;
+
+        &::before {
+            content: '';
+            width: 45px;
+            height: 29px;
+            position: absolute;
+            top: -25px;
+            left: 100px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../images/svg/tringle-decor.svg);
+        }
+    }
+
+    &__list-item {
+        width: 160px;
+        word-break: break-all;
+    }
+
+    &__list-img {
+        margin-bottom: 15px;
+    }
+
+    &__list-text {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+}

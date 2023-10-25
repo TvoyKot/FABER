@@ -63,14 +63,6 @@ function sprite() {
                 pretty: true
             }
         }))
-        .pipe(cheerio({
-            run: (function($) {
-                $('[fill]').removeAttr('fill');
-                $('[stroke]').removeAttr('stroke');
-                $('[style]').removeAttr('style');
-            }),
-            parserOptions: {xmlMode: true}
-        }))
         .pipe(replace('&gt;', '>'))
         .pipe(svgSprite({
             mode: {
@@ -85,6 +77,7 @@ function sprite() {
             }
         }))
         .pipe(dest('app/images'))
+        .pipe(browserSync.stream());
 }
 
 function styles() {
@@ -100,6 +93,7 @@ function  scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-slider/slick/slick.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
