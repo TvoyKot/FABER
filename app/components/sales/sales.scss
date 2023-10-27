@@ -1,0 +1,40 @@
+.sales {
+    padding: 30px 0 100px;
+    border-top: 1px solid rgba(0, 0, 0, 0.20);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        width: 100%;
+    }
+
+    &__list-item {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__list-title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 35px;
+        margin-bottom: 5px;
+    }
+
+    &__list-text {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    &__list-link {
+        width: 160px;
+        padding: 10px 16px;
+        border: 1px solid #000;
+        border-radius: 3px;
+    }
+}

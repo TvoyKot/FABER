@@ -1,4 +1,4 @@
-const {src, dest, watch, parallel, series} = require('gulp');
+const { src, dest, watch, parallel, series } = require('gulp');
 
 const scss = require('gulp-sass')(require('sass'));
 
@@ -29,21 +29,21 @@ const browserSync = require('browser-sync').create();
 
 function pages() {
     return src(['app/pages/*.html'])
-    .pipe(include({
-        includePaths: 'app/components/*'
-    }))
-    .pipe(dest('app'))
-    .pipe(browserSync.stream());
+        .pipe(include({
+            includePaths: 'app/components/*'
+        }))
+        .pipe(dest('app'))
+        .pipe(browserSync.stream());
 }
 
 function fonts() {
     return src('app/fonts/src/*.*')
-    .pipe(fonter({
-        formats: ['woff', 'ttf']
-    }))
-    .pipe(src('app/fonts/*.ttf'))
-    .pipe(ttf2woff2())
-    .pipe(dest('app/fonts'))
+        .pipe(fonter({
+            formats: ['woff', 'ttf']
+        }))
+        .pipe(src('app/fonts/*.ttf'))
+        .pipe(ttf2woff2())
+        .pipe(dest('app/fonts'))
 }
 
 function images() {
@@ -56,12 +56,21 @@ function images() {
         .pipe(browserSync.stream());
 }
 
+
 function sprite() {
     return src('app/images/src/svg/*.svg', '!app/images/src/*/*.*')
         .pipe(svgMin({
             js2svg: {
                 pretty: true
             }
+        }))
+        .pipe(cheerio({
+            run: (function($) {
+                $('[fill]').removeAttr('fill');
+                $('[stroke]').removeAttr('stroke');
+                $('[style]').removeAttr('style');
+            }),
+            parserOptions: {xmlMode: true}
         }))
         .pipe(replace('&gt;', '>'))
         .pipe(svgSprite({
@@ -77,29 +86,28 @@ function sprite() {
             }
         }))
         .pipe(dest('app/images'))
-        .pipe(browserSync.stream());
 }
 
 function styles() {
     return src('app/scss/style.scss')
-    .pipe(autoprefixer({overrideBrowserslist: ['last 10 version']}))
-    .pipe(concat('style.min.css'))
-    .pipe(scss({outputStyle: 'compressed'}))
-    .pipe(dest('app/css'))
-    .pipe(browserSync.stream());
+        .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
+        .pipe(concat('style.min.css'))
+        .pipe(scss({ outputStyle: 'compressed' }))
+        .pipe(dest('app/css'))
+        .pipe(browserSync.stream());
 }
 
-function  scripts() {
+function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-slider/slick/slick.js',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
         'app/js/main.js'
     ])
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
-    .pipe(dest('app/js'))
-    .pipe(browserSync.stream());
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(dest('app/js'))
+        .pipe(browserSync.stream());
 }
 
 function watching() {
@@ -126,14 +134,14 @@ function building() {
         'app/images/sprite.svg',
         'app/css/style.min.css',
         'app/js/main.min.js'
-    ], {base : 'app'})
-    .pipe(dest('dist'))
+    ], { base: 'app' })
+        .pipe(dest('dist'))
 }
 
 
 function cleanDist() {
     return src('dist')
-    .pipe(clean())
+        .pipe(clean())
 }
 
 exports.pages = pages;
@@ -145,5 +153,5 @@ exports.scripts = scripts;
 exports.building = building;
 exports.watching = watching;
 
-exports.default = parallel( styles, images, scripts, watching);
+exports.default = parallel(styles, images, scripts, watching);
 exports.build = series(building, cleanDist);
