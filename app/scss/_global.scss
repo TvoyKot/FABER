@@ -47,6 +47,11 @@ body {
   line-height: 56px;
 }
 
+.breadcrumbs-contacts {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
 .tabs {
   display: flex;
   & .tab {
@@ -85,3 +90,5 @@ body {
     }
   }
 }
+
+

@@ -50,6 +50,25 @@ $(function () {
     }
     );
 
+    $('.project-content__slider-block').slick(
+        {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<button class="project-slider__btn slick-arrow slick-prev"><img src="images/svg/icon-arrow.svg" alt="icon"></button>',
+            nextArrow: '<button class="project-slider__btn slick-arrow slick-next"><img src="images/svg/icon-arrow.svg" alt="icon"></button>',
+            asNavFor: '.project-content__slider-nav',
+            dots: false
+        });
+
+        $('.project-content__slider-nav').slick(
+            {
+                slidesToShow: 10,
+                slidesToScroll: 1,
+                prevArrow: false,
+                nextArrow: false,
+                dots: false
+            });
+    
     $('.tab').on('click', function (e) {
         e.preventDefault();
 
@@ -63,6 +82,21 @@ $(function () {
     $('.projects-filter__select').styler();
 
     $('.projects__form-input--file').styler();
+
+    $('.project-calc__radio-btn').styler();
+
+    $('.project-calc__select').styler();
+
+
+
+    const mapElements = document.querySelectorAll('.map-element');
+    const mapText = document.querySelectorAll('.project-technology__item');
+
+    mapElements.forEach(mapElement => {
+        mapElement.addEventListener('mouseover', function() {
+        mapText.style.display = 'none';
+        })
+    })
 
     
 });

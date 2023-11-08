@@ -1,0 +1,119 @@
+.about {
+    padding: 50px 0 100px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__content-info {
+        max-width: 644px;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    &__text-extratext {
+        padding: 10px 26px 20px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 35px;
+        background-color: #EFEBDE;
+        margin-bottom: 40px;
+    }
+
+    & .info-list {
+        margin-bottom: 40px;
+
+        &__box-subtitle {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 35px;
+            margin-bottom: 10px;
+        }
+
+        &__item {
+            margin-left: 20px;
+            padding-left: 5px;
+            list-style-type: circle;
+        }
+    }
+    &__content-illustration {
+        height: 660px;
+    }
+    &__content-text {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 35px;
+        margin-bottom: 58px;
+    }
+
+    &__content-img {
+        margin-bottom: 50px;
+    }
+
+    .illustration-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        min-height: 390px;
+
+        &__item {
+            text-align: center;
+            width: 220px;
+        }
+
+        &__img {
+            margin-bottom: 5px;
+        }
+
+        &__text {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+&-link {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    &-link__box-item {
+        display: inline-block;
+min-width: 456px;
+        padding: 18px 30px 30px;
+        border: 1px solid #CCC;
+        transition: all .2s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(0.9);
+
+        }
+    }
+
+    &-link__item-title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    &-link__box-link {
+        color: #fff;
+        padding: 10px 15px;
+        background-color: $colorAccent;
+        border-radius: 3px;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
