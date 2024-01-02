@@ -39,6 +39,9 @@
         max-width: 100%;
         width: 100%;
     }
+    &__img-outside {
+        display: none;
+    }
 
     &__list {
         display: flex;

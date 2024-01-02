@@ -1,6 +1,8 @@
 .projects {
     padding: 40px;
-
+    .filter-btn {
+        display: none;
+    }
     &__form {
         max-width: 456px;
         padding: 32px 50px 10px;

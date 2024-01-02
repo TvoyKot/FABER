@@ -13,17 +13,24 @@
     &-slider {
         position: relative;
 
-        .slick-track {
+       &.slick-track {
             display: flex;
             gap: 30px;
         }
 
-        .slick-next {
+        &.slick-next {
             top: -112px;
             right: 0;
             position: absolute;
         }
+        &__btn {
+            position: absolute;
+            top: -115px;
+            right: 140px;
+            cursor: pointer;
+        }
     }
+ 
 
     &-slider__item {
         padding: 30px 35px;

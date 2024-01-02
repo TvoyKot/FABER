@@ -14,72 +14,84 @@
 
 <body>
     <div class="wrapper">
-        <div class="menu">
-            <a href="index.html" class="menu__logo logo">
-                <img src="images/svg/logo.svg" alt="logo">
-            </a>
-            <a href="tel:74959026104" class="menu__number">
-                <svg class="svg-icon-mobPhone-dims">
-                    <use xlink:href="images/sprite.svg#icon-mobPhone">
-                    </use>
-                </svg>
-                +7 495 902 61 04
-            </a>
-            <nav class="menu-nav">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a href="projects.html" class="menu__list-link">Проекты домов</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="service.html" class="menu__list-link">Услуги</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="about.html" class="menu__list-link">О компании</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Наши работы</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="comments.html" class="menu__list-link">Отзывы</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="sales.html" class="menu__list-link">Акции</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="contacts.html" class="menu__list-link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <form class="menu__form">
-                <input type="search" class="menu__form-input" placeholder="Поиск">
-            </form>
-            <a href="#" class="menu__link-call">Заказать звонок</a>
-            <ul class="menu__sociall">
-                <li class="menu__sociall-item">
-                    <svg class="svg-instagram-icon-dims">
-                        <use xlink:href="images/sprite.svg#instagram-icon">
-                        </use>
-                    </svg>
-                </li>
-                <li class="menu__sociall-item">
-                    <svg class="svg-vk-icon-dims">
-                        <use xlink:href="images/sprite.svg#vk-icon">
-                        </use>
-                    </svg>
-                </li>
-                <li class="menu__sociall-item">
-                    <svg class="svg-facebook-icon-dims">
-                        <use xlink:href="images/sprite.svg#facebook-icon">
-                        </use>
-                    </svg>
-                </li>
-            </ul>
-            <div class="menu__politicy">
-                <a href="#" class="menu__politicy-link">Пользовательское соглашение</a>
-                <a href="#" class="menu__politicy-link">Политика конфиденциальности</a>
+        <div class="menu-wrapper">
+            <div class="container">
+                <div class="menu">
+                    <a href="index.html" class="menu__logo logo">
+                        <img src="images/svg/logo.svg" alt="logo">
+                    </a>
+                    <a href="tel:74959026104" class="menu__number">
+                        <svg class="svg-icon-phone-dims">
+                            <use xlink:href="images/sprite.svg#icon-phone">
+                            </use>
+                        </svg>
+                        <svg class="svg-icon-mobPhone-dims">
+                            <use xlink:href="images/sprite.svg#icon-mobPhone">
+                            </use>
+                        </svg>
+                        <span>+7 495 902 61 04</span>
+                    </a>
+                    <nav class="menu-nav">
+                        <button class="menu-nav__btn">
+                            <img src="images/svg/btn-menu.svg" alt="btn-icon-menu">
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="projects.html" class="menu__list-link">Проекты домов</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="service.html" class="menu__list-link">Услуги</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="about.html" class="menu__list-link">О компании</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">Наши работы</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="comments.html" class="menu__list-link">Отзывы</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="sales.html" class="menu__list-link">Акции</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="contacts.html" class="menu__list-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form class="menu__form">
+                        <input type="search" class="menu__form-input" placeholder="Поиск">
+                    </form>
+                    <a href="#" class="menu__link-call">Заказать звонок</a>
+                    <ul class="menu__sociall">
+                        <li class="menu__sociall-item">
+                            <svg class="svg-instagram-icon-dims">
+                                <use xlink:href="images/sprite.svg#instagram-icon">
+                                </use>
+                            </svg>
+                        </li>
+                        <li class="menu__sociall-item">
+                            <svg class="svg-vk-icon-dims">
+                                <use xlink:href="images/sprite.svg#vk-icon">
+                                </use>
+                            </svg>
+                        </li>
+                        <li class="menu__sociall-item">
+                            <svg class="svg-facebook-icon-dims">
+                                <use xlink:href="images/sprite.svg#facebook-icon">
+                                </use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <div class="menu__politicy">
+                        <a href="#" class="menu__politicy-link">Пользовательское соглашение</a>
+                        <a href="#" class="menu__politicy-link">Политика конфиденциальности</a>
+                    </div>
+                </div>
             </div>
         </div>
         <header class="header">
+            <img src="images/header/header-img.jpg" alt="image" class="header__img-outside">
             <div class="container">
                 <div class="header__inner">
                     <div class="header__content">
@@ -110,7 +122,7 @@
             </div>
         
         </header>
-        <main class="main">
+      <main class="main">
             <section class="perfomance">
                 <div class="container">
                     <div class="perfomance__items">
@@ -154,7 +166,7 @@
                     <div class="recomendation__inner">
                         <h4 class="recomendation__title">Зарекомендовашие <br> себя проекты</h4>
                         <div class="recomendation-wrapper" id="1">
-                            <div class="recomendation-slider slider-container">
+                            <div class="recomendation-slider recomendation-slider--one slider-container">
                                 <div class="recomendation-slider__item">
                                     <div class="recomendation__slider-img">
                                         <img src="images/recomendation/recomendation-1.jpg" alt="image">
@@ -180,8 +192,8 @@
                             <div class="recomendation-slider__counter counter-slider">
                                 <img src="images/svg/icon-gallery.svg" alt="icon">
                                 <div class="recomendation-slider-counter counter-slider__count">
-                                    <span class="recomendation-slider__count-current counter-slider__current">1</span>/
-                                    <span class="recomendation-slider__counter-totall counter-slider__totall"></span>
+                                    <span class="recomendation-slider__count-current counter-slider__current--one">1</span>/
+                                    <span class="recomendation-slider__counter-totall counter-slider__totall--one"></span>
                                 </div>
                             </div>
                             <div class="recomendation__box">
@@ -217,7 +229,7 @@
                             </div>
                         </div>
                         <div class="recomendation-wrapper" id="2">
-                            <div class="recomendation-slider slider-container">
+                            <div class="recomendation-slider recomendation-slider--second slider-container">
                                 <div class="recomendation-slider__item">
                                     <div class="recomendation__slider-img">
                                         <img src="images/recomendation/recomendation-2.jpg" alt="image">
@@ -243,8 +255,8 @@
                             <div class="recomendation-slider__counter counter-slider" >
                                 <img src="images/svg/icon-gallery.svg" alt="icon">
                                 <div class="recomendation-slider-counter counter-slider__count">
-                                    <span class="recomendation-slider__count-current counter-slider__current">1</span>/
-                                    <span class="recomendation-slider__counter-totall counter-slider__totall"></span>
+                                    <span class="recomendation-slider__count-current counter-slider__current--second">1</span>/
+                                    <span class="recomendation-slider__counter-totall counter-slider__totall--second"></span>
                                 </div>
                             </div>
                             <div class="recomendation__box">
@@ -280,7 +292,7 @@
                             </div>
                         </div>
                         <div class="recomendation-wrapper" id="3">
-                            <div class="recomendation-slider slider-container">
+                            <div class="recomendation-slider recomendation-slider--third slider-container">
                                 <div class="recomendation-slider__item">
                                     <div class="recomendation__slider-img">
                                         <img src="images/recomendation/recomendation-1.jpg" alt="image">
@@ -306,8 +318,8 @@
                             <div class="recomendation-slider__counter counter-slider">
                                 <img src="images/svg/icon-gallery.svg" alt="icon">
                                 <div class="recomendation-slider-counter counter-slider__count">
-                                    <span class="recomendation-slider__count-current counter-slider__current">1</span>/
-                                    <span class="recomendation-slider__counter-totall counter-slider__totall"></span>
+                                    <span class="recomendation-slider__count-current counter-slider__current--third">1</span>/
+                                    <span class="recomendation-slider__counter-totall counter-slider__totall--third"></span>
                                 </div>
                             </div>
                             <div class="recomendation__box">
@@ -343,7 +355,7 @@
                             </div>
                         </div>
                         <div class="recomendation-wrapper" id="4">
-                            <div class="recomendation-slider slider-container">
+                            <div class="recomendation-slider slider-container recomendation-slider--fourth">
                                 <div class="recomendation-slider__item">
                                     <div class="recomendation__slider-img">
                                         <img src="images/recomendation/recomendation-4.jpg" alt="image">
@@ -369,8 +381,8 @@
                             <div class="recomendation-slider__counter counter-slider">
                                 <img src="images/svg/icon-gallery.svg" alt="icon">
                                 <div class="recomendation-slider-counter counter-slider__count">
-                                    <span class="recomendation-slider__count-current counter-slider__current">1</span>/
-                                    <span class="recomendation-slider__counter-totall counter-slider__totall"></span>
+                                    <span class="recomendation-slider__count-current counter-slider__current--fourth">1</span>/
+                                    <span class="recomendation-slider__counter-totall counter-slider__totall--fourth"></span>
                                 </div>
                             </div>
                             <div class="recomendation__box">
@@ -538,7 +550,7 @@
                             <div class="review-counter counter-slider">
                                 <img src="images/svg/icon-gallery.svg" alt="icon">
                                 <div class="review-slider-counter counter-slider__count">
-                                    <span class="review-slider__count-current counter-slider__current"></span>-
+                                    <span class="review-slider__count-current counter-slider__current">1</span>-
                                     <span class="review-slider__counter-totall counter-slider__totall">9</span>
                                 </div>
                             </div>
@@ -548,221 +560,223 @@
                 </div>
             </div>
             </section>
-    </main>
+        </main>
 
-    <footer class="footer">
+        <footer class="footer">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="footer__inner">
+                <div class="footer__inner">
 
-                <div class="footer__info">
+                    <div class="footer__info">
 
-                    <div class="footer__info-box">
+                        <div class="footer__info-box">
 
-                        <h3 class="footer__info-title title">Несколько слов о нас</h3>
+                            <h3 class="footer__info-title title">Несколько слов о нас</h3>
 
-                        <p class="footer__info-text">Компания Legno Domus занимается строительством домов из дерева в
+                            <p class="footer__info-text">Компания Legno Domus занимается строительством домов из дерева в
 
-                            Москве и Московской области. На нашем сайте вы сможете найти готовые типовые проекты
+                                Москве и Московской области. На нашем сайте вы сможете найти готовые типовые проекты
 
-                            каркасных и брусовых деревянных сооружений. Кроме того, мы можем построить здание любого
+                                каркасных и брусовых деревянных сооружений. Кроме того, мы можем построить здание любого
 
-                            типа сложности по вашему индивидуальному проекту.</p>
+                                типа сложности по вашему индивидуальному проекту.</p>
+
+                        </div>
+
+                        <img src="images/footer/info-img.jpg" alt="image" class="footer__info-img">
 
                     </div>
 
-                    <img src="images/footer/info-img.jpg" alt="image" class="footer__info-img">
+                    <div class="footer__lists">
 
-                </div>
+                        <ul class="footer__list list-benefits">
 
-                <div class="footer__lists">
+                            <li class="footer__list-item">
 
-                    <ul class="footer__list list-benefits">
+                                <p class="footer__list-item-subtitle">Преимущества сотрудничества с нами</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-subtitle">Преимущества сотрудничества с нами</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">Мы самостоятельно занимаемся производством и подготовкой
 
-                        <li class="footer__list-item">
+                                    древесины для постройки, используя для этого современное оборудование, что существенно
 
-                            <p class="footer__list-item-text">Мы самостоятельно занимаемся производством и подготовкой
+                                    снижает цену строительных материалов</p>
 
-                                древесины для постройки, используя для этого современное оборудование, что существенно
+                            </li>
 
-                                снижает цену строительных материалов</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">Мы самостоятельно осуществляем доставку и разгрузку на
 
-                        <li class="footer__list-item">
+                                    объекте в Москве или Подмосковье</p>
 
-                            <p class="footer__list-item-text">Мы самостоятельно осуществляем доставку и разгрузку на
+                            </li>
 
-                                объекте в Москве или Подмосковье</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">Мы сами выполняем закупку всех сопутствующих материалов
 
-                        <li class="footer__list-item">
+                                </p>
 
-                            <p class="footer__list-item-text">Мы сами выполняем закупку всех сопутствующих материалов
+                            </li>
 
-                            </p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">Нашими руками построено уже более 800 деревянных домов и
 
-                        <li class="footer__list-item">
+                                    бань</p>
 
-                            <p class="footer__list-item-text">Нашими руками построено уже более 800 деревянных домов и
+                            </li>
 
-                                бань</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">Нашими руками построено уже более 800 деревянных домов и
 
-                        <li class="footer__list-item">
+                                    бань</p>
 
-                            <p class="footer__list-item-text">Нашими руками построено уже более 800 деревянных домов и
+                            </li>
 
-                                бань</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">Опыт наших мастеров в домостроении позволяет завершить
 
-                        <li class="footer__list-item">
+                                    постройку в четко установленный срок</p>
 
-                            <p class="footer__list-item-text">Опыт наших мастеров в домостроении позволяет завершить
+                            </li>
 
-                                постройку в четко установленный срок</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">Мы даем гарантию до двух лет на нашу работу и устраним
 
-                        <li class="footer__list-item">
+                                    возможные неполадки в течение гарантийного срока</p>
 
-                            <p class="footer__list-item-text">Мы даем гарантию до двух лет на нашу работу и устраним
+                            </li>
 
-                                возможные неполадки в течение гарантийного срока</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">Оплата нашей работы осуществляется по ее завершении</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-text">Оплата нашей работы осуществляется по ее завершении</p>
+                        </ul>
 
-                        </li>
+                        <ul class="footer__list list-offers">
 
-                    </ul>
+                            <li class="footer__list-item">
 
-                    <ul class="footer__list list-offers">
+                                <p class="footer__list-item-subtitle">Предложение компании Legno Domus</p>
 
-                        <li class="footer__list-item">
+                                <p class="footer__list-item-subtext">Вы можете заказать строительство следующих вариантов
 
-                            <p class="footer__list-item-subtitle">Предложение компании Legno Domus</p>
+                                    деревянных домов и коттеджей:</p>
 
-                            <p class="footer__list-item-subtext">Вы можете заказать строительство следующих вариантов
+                            </li>
 
-                                деревянных домов и коттеджей:</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">каркасных;</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-text">каркасных;</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">выполненных из бруса;</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-text">выполненных из бруса;</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">выполненных из бревен;
 
-                        <li class="footer__list-item">
+                                </p>
 
-                            <p class="footer__list-item-text">выполненных из бревен;
+                            </li>
 
-                            </p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">домов с выпускными чашами;</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-text">домов с выпускными чашами;</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">бань различных типов.</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-text">бань различных типов.</p>
+                            <li class="footer__list-item footer__list-item--two">
 
-                        </li>
+                                <p class="footer__list-item-subtext">Мы осуществляем постройку сооружений различной
 
-                        <li class="footer__list-item footer__list-item--two">
+                                    этажности и размеров. Помимо непосредственного возведения деревянных домов, мы выполняем
 
-                            <p class="footer__list-item-subtext">Мы осуществляем постройку сооружений различной
+                                    следующие виды работ:</p>
 
-                                этажности и размеров. Помимо непосредственного возведения деревянных домов, мы выполняем
+                            </li>
 
-                                следующие виды работ:</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">подведение канализации;</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-text">подведение канализации;</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">монтаж электрики, отопления и сантехники;</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-text">монтаж электрики, отопления и сантехники;</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">установку заборов;</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-text">установку заборов;</p>
+                            <li class="footer__list-item">
 
-                        </li>
+                                <p class="footer__list-item-text">меблировку.</p>
 
-                        <li class="footer__list-item">
+                            </li>
 
-                            <p class="footer__list-item-text">меблировку.</p>
+                        </ul>
 
-                        </li>
+                    </div>
 
-                    </ul>
+                    <div class="footer__extra">
 
-                </div>
+                        <p class="footer__extra-text">Для получения более подробной информации по строительству домов под
 
-                <div class="footer__extra">
+                            ключ вы можете позвонить нам по телефону. Персональный менеджер поможет рассчитать примерную
 
-                    <p class="footer__extra-text">Для получения более подробной информации по строительству домов под
+                            стоимость постройки и ответит на все интересующие вопросы.</p>
 
-                        ключ вы можете позвонить нам по телефону. Персональный менеджер поможет рассчитать примерную
+                        <div class="footer__extra-box">
 
-                        стоимость постройки и ответит на все интересующие вопросы.</p>
+                            <a href="#" class="footer__extra-box-link">
 
-                    <div class="footer__extra-box">
+                                <svg class="svg-icon-mobPhone-dims">
 
-                        <a href="#" class="footer__extra-box-link">
+                                    <use xlink:href="images/sprite.svg#icon-mobPhone">
 
-                            <svg class="svg-icon-mobPhone-dims">
+                                    </use>
 
-                                <use xlink:href="images/sprite.svg#icon-mobPhone">
+                                </svg>
 
-                                </use>
+                                +7 495 902 61 04
 
-                            </svg>
+                            </a>
 
-                            +7 495 902 61 04
+                            <div class="footer__extra-box-address">
 
-                        </a>
+                                Москва, Каширское шоссе, владение 63, корпус 1, строение 52
 
-                        <div class="footer__extra-box-address">
+                                Режим работы выставки с 10:00 до 20:00
 
-                            Москва, Каширское шоссе, владение 63, корпус 1, строение 52
-
-                            Режим работы выставки с 10:00 до 20:00
+                            </div>
 
                         </div>
 
@@ -772,9 +786,7 @@
 
             </div>
 
-        </div>
-
-    </footer>
+        </footer>
     </div>
     <script src="js/main.min.js"></script>
 </body>

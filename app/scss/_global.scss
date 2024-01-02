@@ -12,7 +12,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  overflow-x: hidden;
+   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
 }
@@ -36,7 +36,7 @@ body {
   max-width: 1470px;
   margin: 0 auto;
   margin-left: 385px;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 .title {
@@ -70,7 +70,7 @@ body {
       &::before {
         content: '';
         position: absolute;
-        top: 58px;
+        top: 56px;
         left: 130px;
         width: 18px;
         height: 18px;
@@ -90,5 +90,3 @@ body {
     }
   }
 }
-
-

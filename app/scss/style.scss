@@ -25,6 +25,7 @@
 .project {
     &__inner {
         display: flex;
+        align-items: center;
     }
 
     &__title {
@@ -57,7 +58,8 @@
     }
 
     &-content {
-        width: 946px;
+        max-width: 946px;
+        width: 100%;
     }
 
     &-content__slider-nav {
@@ -300,7 +302,7 @@
 
     .tabs .tab--active::before {
         top: 59px;
-        left: 100px;
+        left: 50%;
     }
 }
 
@@ -496,17 +498,24 @@
         .project-technology__list {
             display: flex;
             flex-direction: column;
+            list-style-type: armenian;
             .project-technology {
                 &__item {
                     max-width: 600px;
                     width: 100%;
                     padding: 10px 20px 30px;
+                    display: flex;  
+                    gap: 0;
+                    flex-direction: column;
                     cursor: pointer;
                 }
 
                 &__item--active {
                     color: #fff;
                     background-color: $colorAccent;
+                    .project-technology__text {
+                        color: #fff;
+                    }
                 }
 
                 &__listtitle {
@@ -647,7 +656,6 @@
             line-height: 25px;
         }
     }
-
     &-photo {
         &__items {
             display: flex;
@@ -727,3 +735,6 @@
     }
 
 }
+
+
+@import 'media';
